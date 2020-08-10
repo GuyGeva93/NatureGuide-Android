@@ -33,7 +33,10 @@ dependencies {
     //noinspection GradleCompatible
     implementation 'com.android.support:design:19.3.0'
     implementation 'com.google.firebase:firebase-database:19.2.1'
+<<<<<<< HEAD
     implementation 'com.google.firebase:firebase-storage:19.1.1'
+=======
+>>>>>>> f4e0fbc30fa26f66e68ee052a075049b1c7e5ef7
     implementation 'com.google.android.gms:play-services-maps:17.0.0'
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'

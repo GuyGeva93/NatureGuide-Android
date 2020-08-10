@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@android:color/white"
     android:layout_height="match_parent"
     android:background="#cad2c5"
     android:orientation="vertical"
@@ -21,9 +22,14 @@
         android:layout_height="0dp"
         android:layout_weight="2"
         android:gravity="center"
+<<<<<<< HEAD
         android:text="Nature Guide\n הרשמה"
         android:textSize="20dp"
         android:textStyle="bold" />
+=======
+        android:text="Nature Guide\n Register"
+        android:textSize="20dp" />
+>>>>>>> f4e0fbc30fa26f66e68ee052a075049b1c7e5ef7
 
     <!--app image-->
 
@@ -31,8 +37,13 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="4"
+<<<<<<< HEAD
         android:background="#cad2c5"
         android:src="@drawable/naturemainphoto" />
+=======
+        android:background="@android:color/white"
+        android:src="@mipmap/ic_nature_main" />
+>>>>>>> f4e0fbc30fa26f66e68ee052a075049b1c7e5ef7
 
     <!--body-->
 
@@ -62,17 +73,34 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="2"
+<<<<<<< HEAD
                 android:drawableEnd="@drawable/mail_icon"
                 android:drawablePadding="10dp"
                 android:gravity="right"
                 android:hint="הכנס אימייל..."
                 android:inputType="text"
                 android:textStyle="bold" />
+=======
+                android:hint="Insert Email.."
+                android:inputType="text" />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5" />
+            <EditText
+                android:id="@+id/RegisterUserFirstname"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:hint="Insert First Name.."
+                android:inputType="text" />
+>>>>>>> f4e0fbc30fa26f66e68ee052a075049b1c7e5ef7
 
             <Space
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="0.5" />
+<<<<<<< HEAD
 
             <EditText
                 android:id="@+id/RegisterUserFirstname"
@@ -92,11 +120,14 @@
                 android:layout_weight="0.5"
                 android:textStyle="bold" />
 
+=======
+>>>>>>> f4e0fbc30fa26f66e68ee052a075049b1c7e5ef7
             <EditText
                 android:id="@+id/RegisterUserLastname"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="2"
+<<<<<<< HEAD
                 android:drawablePadding="10dp"
                 android:gravity="right"
                 android:hint="הכנס שם משפחה..."
@@ -104,6 +135,10 @@
                 android:textStyle="bold"
                 android:drawableEnd="@drawable/user_icon"/>
 
+=======
+                android:hint="Insert Last Name.."
+                android:inputType="text" />
+>>>>>>> f4e0fbc30fa26f66e68ee052a075049b1c7e5ef7
             <Space
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
@@ -114,6 +149,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="2"
+<<<<<<< HEAD
                 android:drawableEnd="@drawable/pass_icon"
                 android:drawablePadding="10dp"
                 android:gravity="right"
@@ -121,11 +157,18 @@
                 android:inputType="textPassword"
                 android:textStyle="bold" />
 
+=======
+                android:hint="Insert Password.."
+                android:inputType="textPassword" />
+>>>>>>> f4e0fbc30fa26f66e68ee052a075049b1c7e5ef7
             <Space
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="0.5" />
+<<<<<<< HEAD
 
+=======
+>>>>>>> f4e0fbc30fa26f66e68ee052a075049b1c7e5ef7
             <EditText
                 android:id="@+id/RegisterUserPassword2"
                 android:layout_width="match_parent"
@@ -149,8 +192,12 @@
                 android:layout_height="0dp"
                 android:layout_weight="1.5"
                 android:background="@drawable/border"
+<<<<<<< HEAD
                 android:text="הרשם עכשיו"
                 android:textStyle="bold" />
+=======
+                android:text="Register" />
+>>>>>>> f4e0fbc30fa26f66e68ee052a075049b1c7e5ef7
 
             <Space
                 android:layout_width="match_parent"
@@ -172,5 +219,10 @@
 
     </LinearLayout>
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> f4e0fbc30fa26f66e68ee052a075049b1c7e5ef7
 
 </LinearLayout>

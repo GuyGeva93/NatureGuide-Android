@@ -66,6 +66,10 @@ public class RegisterPage extends AppCompatActivity {
                                         //write on data base at Users section the new user under user uid object
                                         myRef = database.getReference("Users").child(user.getUid());
                                         User temp = new User(userFirstname.getText().toString(), userLastname.getText().toString(), userEmail.getText().toString(), userPass1.getText().toString());
+<<<<<<< HEAD
+=======
+                                        temp.getFavLocation().add(new NatureLocation("נחל אלכסנדר", "נחל אלכסנדר", "נחל גדול באיזור חדרה עמק חפר", R.drawable.alexander, 32.386652, 34.892112));
+>>>>>>> f4e0fbc30fa26f66e68ee052a075049b1c7e5ef7
                                         myRef.setValue(temp);
 
                                         updateUI(user);

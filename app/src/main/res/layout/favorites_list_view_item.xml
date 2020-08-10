@@ -3,7 +3,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+<<<<<<< HEAD
     android:layout_height="330dp"
+=======
+    android:layout_height="300dp"
+>>>>>>> f4e0fbc30fa26f66e68ee052a075049b1c7e5ef7
     android:background="#6a737b"
     android:orientation="vertical"
     android:weightSum="9"
@@ -26,7 +30,11 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1" />
+<<<<<<< HEAD
         <!--container-->
+=======
+        <!--game container-->
+>>>>>>> f4e0fbc30fa26f66e68ee052a075049b1c7e5ef7
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
@@ -47,7 +55,11 @@
                     android:layout_width="0dp"
                     android:layout_height="100dp"
                     android:layout_weight="1"
+<<<<<<< HEAD
                      />
+=======
+                    app:srcCompat="@drawable/alexander" />
+>>>>>>> f4e0fbc30fa26f66e68ee052a075049b1c7e5ef7
 
                 <TextView
                     android:id="@+id/txt_title"
@@ -91,6 +103,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+<<<<<<< HEAD
                     android:text="הוסף למועדפים"
                     android:textColorLink="#FFFFFF"
                     android:textSize="10dp"
@@ -132,17 +145,35 @@
                         android:textColorLink="#FFFFFF"
                         />
                 </LinearLayout>
+=======
+                    android:text="Add To Favorites"
+                    android:textColorLink="#FFFFFF" />
+
+                <Space
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+>>>>>>> f4e0fbc30fa26f66e68ee052a075049b1c7e5ef7
 
                 <Button
 
                     android:id="@+id/btnOpenInMaps"
+<<<<<<< HEAD
+=======
+
+>>>>>>> f4e0fbc30fa26f66e68ee052a075049b1c7e5ef7
                     style="@android:style/Widget.DeviceDefault.Button.Borderless.Small"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+<<<<<<< HEAD
                     android:text="פתח במפות"
                     android:textSize="10dp"
                     android:textStyle="bold"/>
+=======
+
+                    android:text="Open In Maps" />
+>>>>>>> f4e0fbc30fa26f66e68ee052a075049b1c7e5ef7
             </LinearLayout>
 
         </LinearLayout>

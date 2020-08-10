@@ -1,22 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<<<<<<< HEAD
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-=======
 <androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
->>>>>>> f4e0fbc30fa26f66e68ee052a075049b1c7e5ef7
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-<<<<<<< HEAD
-    android:orientation="vertical"
-    tools:context=".Favorites"
-=======
     android:background="#6a737b"
     android:orientation="vertical"
-    tools:context=".Favorites"
+    tools:context=".MainActivity"
     android:id="@+id/drawer_layout"
->>>>>>> f4e0fbc30fa26f66e68ee052a075049b1c7e5ef7
     android:fitsSystemWindows="true"
     tools:openDrawer="start">
     <LinearLayout
@@ -24,8 +15,6 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         android:weightSum="20">
-<<<<<<< HEAD
-=======
         <androidx.appcompat.widget.Toolbar
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
@@ -34,7 +23,6 @@
             android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
             app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
             android:elevation="4dp"/>
->>>>>>> f4e0fbc30fa26f66e68ee052a075049b1c7e5ef7
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -47,11 +35,7 @@
                 android:layout_height="50dp"
                 android:layout_weight="2"
                 android:gravity="center"
-<<<<<<< HEAD
-                android:text="המועדפים שלי"
-=======
-                android:text="Favorites"
->>>>>>> f4e0fbc30fa26f66e68ee052a075049b1c7e5ef7
+                android:text="Nature Guide"
                 android:textSize="20sp" />
             <!--body-->
             <LinearLayout
@@ -61,7 +45,7 @@
                 android:orientation="horizontal"
                 android:weightSum="10">
                 <ListView
-                    android:id="@+id/favoritesListView"
+                    android:id="@+id/mainListView"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_weight="3"
@@ -70,9 +54,6 @@
             </LinearLayout>
         </LinearLayout>
     </LinearLayout>
-<<<<<<< HEAD
-</LinearLayout>
-=======
     <com.google.android.material.navigation.NavigationView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -82,4 +63,3 @@
         app:menu="@menu/drawer_menu"
         />
 </androidx.drawerlayout.widget.DrawerLayout>
->>>>>>> f4e0fbc30fa26f66e68ee052a075049b1c7e5ef7

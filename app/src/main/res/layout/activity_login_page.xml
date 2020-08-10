@@ -4,7 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+<<<<<<< HEAD
     android:background="#f1faee"
+=======
+    android:background="@android:color/white"
+>>>>>>> f4e0fbc30fa26f66e68ee052a075049b1c7e5ef7
     android:orientation="vertical"
     android:weightSum="20"
 
@@ -32,8 +36,13 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="6"
+<<<<<<< HEAD
         android:background="#f1faee"
         android:src="@drawable/naturemainphoto" />
+=======
+        android:background="@android:color/white"
+        android:src="@mipmap/ic_nature_main" />
+>>>>>>> f4e0fbc30fa26f66e68ee052a075049b1c7e5ef7
     <!--body-->
 
     <LinearLayout
@@ -99,8 +108,12 @@
                 android:layout_height="0dp"
                 android:layout_weight="2"
                 android:background="@drawable/border"
+<<<<<<< HEAD
                 android:text="התחבר"
                 android:textStyle="bold" />
+=======
+                android:text="Log in" />
+>>>>>>> f4e0fbc30fa26f66e68ee052a075049b1c7e5ef7
 
             <Space
                 android:layout_width="match_parent"
@@ -111,8 +124,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
+<<<<<<< HEAD
                 android:text="לחץ למטה להרשמה  ?   עוד לא רשום"
                 android:textStyle="bold" />
+=======
+                android:text="Not yet registered? Click below to register" />
+>>>>>>> f4e0fbc30fa26f66e68ee052a075049b1c7e5ef7
 
             <Button
                 android:id="@+id/LoginBtnMoveToRegister"
@@ -120,8 +137,12 @@
                 android:layout_height="0dp"
                 android:layout_weight="2"
                 android:background="@drawable/border"
+<<<<<<< HEAD
                 android:text="הרשמה"
                 android:textStyle="bold" />
+=======
+                android:text="Register" />
+>>>>>>> f4e0fbc30fa26f66e68ee052a075049b1c7e5ef7
 
             <Space
                 android:layout_width="match_parent"

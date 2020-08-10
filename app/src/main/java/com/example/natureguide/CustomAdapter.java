@@ -1,5 +1,6 @@
 package com.example.natureguide;
 
+<<<<<<< HEAD
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
@@ -7,6 +8,10 @@ import android.content.pm.PackageInfo;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+=======
+import android.content.Context;
+import android.content.Intent;
+>>>>>>> f4e0fbc30fa26f66e68ee052a075049b1c7e5ef7
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -16,6 +21,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+<<<<<<< HEAD
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.FragmentActivity;
@@ -80,6 +86,21 @@ public class CustomAdapter extends BaseAdapter {
         userRef = database.getReference("Users").child(mAuth.getUid());
         locationsRef = database.getReference("Locations");
         this.nlList = new ArrayList<>();
+=======
+import com.google.android.gms.maps.GoogleMap;
+import com.google.android.gms.maps.model.LatLng;
+
+public class CustomAdapter extends BaseAdapter {
+    //CUSTOM ADAPTER (LIST VIEW)מובנה משמש לחיבור בין ה רשימה לכל פריט ברשימה
+    NatureLocation[] locationArr;
+    static LayoutInflater inflater;  //for inflate layout items
+    private GoogleMap mMap;
+
+
+    public CustomAdapter(Context context, NatureLocation arr[]) {
+        this.locationArr = arr;
+        inflater = (LayoutInflater.from(context));
+>>>>>>> f4e0fbc30fa26f66e68ee052a075049b1c7e5ef7
     }
 
     @Override
@@ -100,6 +121,7 @@ public class CustomAdapter extends BaseAdapter {
     @Override
     public View getView(final int position, View view, final ViewGroup viewGroup) {
         view = inflater.inflate(R.layout.favorites_list_view_item, viewGroup, false);
+<<<<<<< HEAD
 
         //favOnClick
         final Button btnAddToFavorites = (Button) view.findViewById(R.id.btnAddToFavorites);
@@ -140,10 +162,27 @@ public class CustomAdapter extends BaseAdapter {
         });
 
 
+=======
+        //favOnClick
+        Button btnAddToFavorites = (Button) view.findViewById(R.id.btnAddToFavorites);
+        btnAddToFavorites.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Toast.makeText(inflater.getContext(),  "btnAddToFavorites\nlocationArr["+position+"]", Toast.LENGTH_SHORT).show();
+
+//                Intent intent = new Intent(inflater.getContext(), LocationInfo.class);
+//                intent.putExtra("Description", locationArr[position].getDescription());
+//                intent.putExtra("Name", locationArr[position].getName());
+//                intent.putExtra("Title", locationArr[position].getTitle());
+//                intent.putExtra("Image", locationArr[position].getImage());
+//                inflater.getContext().startActivity(intent);
+            }
+        });
+>>>>>>> f4e0fbc30fa26f66e68ee052a075049b1c7e5ef7
         //btnOpenInMapsOnClick
         Button btnOpenInMaps = (Button) view.findViewById(R.id.btnOpenInMaps);
         btnOpenInMaps.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
+<<<<<<< HEAD
                 callback.setLocation(locationArr[position].getDescription(), locationArr[position].getName(), locationArr[position].getLatLangv(), locationArr[position].getLatLangv1());
             }
         });
@@ -251,4 +290,32 @@ public class CustomAdapter extends BaseAdapter {
         }
         return view;
     }
+=======
+
+                // Toast.makeText(inflater.getContext(),  "btnOpenInMaps\nlocationArr["+position+"]", Toast.LENGTH_SHORT).show();
+
+                Intent intent = new Intent(inflater.getContext(), MapsActivity.class);
+                LatLng Caesrea = new LatLng(32.501173, 34.892103);
+
+                intent.putExtra("LatLngv", locationArr[position].getLatLangv());
+                intent.putExtra("LatLngv1", locationArr[position].getLatLangv1());
+                intent.putExtra("Description", locationArr[position].getDescription());
+                intent.putExtra("Name", locationArr[position].getName());
+                intent.putExtra("Title", locationArr[position].getTitle());
+                intent.putExtra("Image", locationArr[position].getImage());
+                inflater.getContext().startActivity(intent);
+            }
+        });
+        ImageView imgCountry = view.findViewById(R.id.img_location);
+        TextView txtName = view.findViewById(R.id.txt_title);
+        TextView txtDescription = view.findViewById(R.id.txt_description);
+
+        imgCountry.setImageResource(locationArr[position].getImage());
+        txtName.setText(locationArr[position].getTitle());
+        txtDescription.setText(locationArr[position].getDescription());
+        return view;
+    }
+
+
+>>>>>>> f4e0fbc30fa26f66e68ee052a075049b1c7e5ef7
 }
