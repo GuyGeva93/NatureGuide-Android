@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#cad2c5"
     android:orientation="vertical"
     android:weightSum="20"
     tools:context=".MainActivity">
@@ -13,30 +14,32 @@
         android:layout_height="0dp"
         android:layout_weight="1" />
 
-    //Title
+    <!--Title-->
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="2"
         android:gravity="center"
-        android:text="Nature Guide \n Register"
-        android:textSize="20dp" />
+        android:text="Nature Guide\n הרשמה"
+        android:textSize="20dp"
+        android:textStyle="bold" />
 
-    //app image
+    <!--app image-->
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="6"
-        android:background="@android:color/white"
-        android:src="@mipmap/ic_nature_main" />
-    //body
+        android:layout_weight="4"
+        android:background="#cad2c5"
+        android:src="@drawable/naturemainphoto" />
+
+    <!--body-->
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="10"
+        android:layout_weight="12"
         android:orientation="horizontal"
         android:weightSum="10">
 
@@ -44,54 +47,110 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1" />
-        //fields container
+
+        <!--fields container-->
 
         <LinearLayout
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="8"
             android:orientation="vertical"
-            android:weightSum="12">
+            android:weightSum="14">
 
             <EditText
                 android:id="@+id/RegisterUserEmail"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="2"
-                android:hint="Insert Email.."
-                android:inputType="text" />
+                android:drawableEnd="@drawable/mail_icon"
+                android:drawablePadding="10dp"
+                android:gravity="right"
+                android:hint="הכנס אימייל..."
+                android:inputType="text"
+                android:textStyle="bold" />
 
             <Space
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="1" />
+                android:layout_weight="0.5" />
+
+            <EditText
+                android:id="@+id/RegisterUserFirstname"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:drawableEnd="@drawable/user_icon"
+                android:drawablePadding="10dp"
+                android:gravity="right"
+                android:hint="הכנס שם פרטי..."
+                android:inputType="text"
+                android:textStyle="bold" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/RegisterUserLastname"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:drawablePadding="10dp"
+                android:gravity="right"
+                android:hint="הכנס שם משפחה..."
+                android:inputType="text"
+                android:textStyle="bold"
+                android:drawableEnd="@drawable/user_icon"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5" />
 
             <EditText
                 android:id="@+id/RegisterUserPassword1"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="2"
-                android:hint="Insert Password.."
-                android:inputType="textPassword" />
+                android:drawableEnd="@drawable/pass_icon"
+                android:drawablePadding="10dp"
+                android:gravity="right"
+                android:hint="..הכנס סיסמא"
+                android:inputType="textPassword"
+                android:textStyle="bold" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.5" />
+
             <EditText
                 android:id="@+id/RegisterUserPassword2"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="2"
-                android:hint="Insert Password again.."
-                android:inputType="textPassword" />
+                android:drawableEnd="@drawable/pass_icon"
+                android:drawablePadding="10dp"
+                android:gravity="right"
+                android:hint="..הכנס סיסמא שוב"
+                android:inputType="textPassword"
+                android:textStyle="bold" />
 
             <Space
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="1" />
+                android:layout_weight="0.5" />
 
             <Button
                 android:id="@+id/RegisterBtnRegister"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
-                android:layout_weight="2"
-                android:text="Register" />
+                android:layout_weight="1.5"
+                android:background="@drawable/border"
+                android:text="הרשם עכשיו"
+                android:textStyle="bold" />
 
             <Space
                 android:layout_width="match_parent"
@@ -112,11 +171,6 @@
             android:layout_weight="1" />
 
     </LinearLayout>
-
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1" />
 
 
 </LinearLayout>

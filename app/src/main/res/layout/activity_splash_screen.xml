@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#ffffff"
+    android:background="#fefae0"
     android:orientation="vertical"
     android:weightSum="20">
 
@@ -31,7 +31,7 @@
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="8"
-        android:src="@mipmap/ic_nature_main"  />
+        android:src="@drawable/naturemainphoto"  />
 
     <Space
         android:layout_width="match_parent"

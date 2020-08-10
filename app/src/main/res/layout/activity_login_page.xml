@@ -4,8 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#f1faee"
     android:orientation="vertical"
     android:weightSum="20"
+
     tools:context=".MainActivity">
 
     <Space
@@ -20,18 +22,19 @@
         android:layout_height="0dp"
         android:layout_weight="2"
         android:gravity="center"
-        android:text="Nature Guide\nLogin"
-        android:textSize="20dp" />
+        android:text="Nature Guide\n התחברות"
+        android:textSize="20dp"
+        android:textStyle="bold" />
 
-    //app image
+    <!--app image-->
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="6"
-        android:background="@android:color/white"
-        android:src="@mipmap/ic_nature_main" />
-    //body
+        android:background="#f1faee"
+        android:src="@drawable/naturemainphoto" />
+    <!--body-->
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -44,7 +47,7 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1" />
-        //fields container
+        <!--fields container-->
 
         <LinearLayout
             android:layout_width="0dp"
@@ -58,8 +61,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="2"
-                android:hint="Insert Email.."
-                android:inputType="text" />
+                android:drawableEnd="@drawable/mail_icon"
+                android:drawablePadding="10dp"
+                android:gravity="right"
+                android:hint="המייל שלך..."
+                android:inputType="text"
+                android:textStyle="bold" />
 
             <Space
                 android:layout_width="match_parent"
@@ -71,20 +78,29 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="2"
-                android:hint="Insert Password.."
-                android:inputType="textPassword" />
+                android:drawableEnd="@drawable/pass_icon"
+                android:drawablePadding="10dp"
+                android:gravity="right"
+                android:hint="... סיסמא"
+                android:inputType="textPassword"
+                android:textStyle="bold"
+                />
+
 
             <Space
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1" />
 
+            <!--buttons-->
             <Button
                 android:id="@+id/LoginBtnLogin"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="2"
-                android:text="Log in" />
+                android:background="@drawable/border"
+                android:text="התחבר"
+                android:textStyle="bold" />
 
             <Space
                 android:layout_width="match_parent"
@@ -95,13 +111,18 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:text="Not yet registered? Click below to register"/>
+                android:text="לחץ למטה להרשמה  ?   עוד לא רשום"
+                android:textStyle="bold" />
+
             <Button
                 android:id="@+id/LoginBtnMoveToRegister"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="2"
-                android:text="Register" />
+                android:background="@drawable/border"
+                android:text="הרשמה"
+                android:textStyle="bold" />
+
             <Space
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
